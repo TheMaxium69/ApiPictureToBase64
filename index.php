@@ -10,11 +10,8 @@ $reponse = "Bienvenue sur l'API de conversion d'image en Base64";
 
 if (!empty($_GET['pictureName'])){
 
-    $reponse = $_GET['pictureName'];
-
     if (file_exists($_GET['pictureName'])) {
         $image = file_get_contents($_GET['pictureName']);
-
 
         $status = "true";
         $why = "Image good";
